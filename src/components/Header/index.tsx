@@ -1,3 +1,4 @@
+import { SigninButton } from "./SigninButton"
 import styles from "./styles.module.scss"
 
 export const Header = () => {
@@ -6,9 +7,10 @@ export const Header = () => {
       <div className={styles.headerContent}>
         <img src="/images/logo.svg" alt="ig.news" />
         <nav>
-          <a>Home</a>
+          <a className={styles.active}>Home</a>
           <a>Posts</a>
         </nav>
+        <SigninButton />
       </div>
     </header>
   )
